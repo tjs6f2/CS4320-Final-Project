@@ -1,5 +1,5 @@
 <?php
-
+//home page
 	require_once("conf.php");
 	require_once("gb.php");
 	require_once("db.class.php");
