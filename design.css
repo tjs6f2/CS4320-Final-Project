@@ -1,0 +1,375 @@
+body {
+    text-align: center;
+	width: 100%;
+}
+/* Part 1
+   1. style sheet definition for top navigation which includes GuestBook Heading
+   2. Navigation Link for adding entry and back to home page
+
+*/
+
+/* Important Note for changing the style defined here
+ 	Width of following blocks should be same
+	div.main_gb
+	div.oddentry
+	div.evenentry
+	another imp note
+	div.topquestion.width + div.topquestionresponse.width= div.main_gb
+	div.oddquestion.width + div.oddquestionresponse.width= div.main_gb
+	div.evenquestion.width + div.evenquestionresponse.width= div.main_gb
+*/
+
+div.main_gb {
+    margin: 0px;
+    padding: 0px;
+	width: 600px;
+}
+
+div.top_nav {
+
+}
+
+div.gb_title {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+div.top_nav_link {
+
+}
+
+.title_link {
+
+}
+
+/* Part 2
+	Style definition for
+	1.Page Navigation links to jump to different pages while viewing entries
+*/
+
+div.page_nav {
+    text-align: left;
+}
+
+div.page {
+    float: left;
+}
+
+div.page_no {
+    
+}
+
+a.pages {
+    color: dodgerblue;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+a.current {
+    color: green;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* 
+Part 3
+Style Definition for add_entry form
+*/
+
+.add_entry {
+    background-color: aliceblue;
+}
+
+div.add_entry {
+    width: inherit;
+    border-color: deepskyblue;
+    border-width: 0px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    margin-top: 6px;
+}
+
+div.add_row {
+
+}
+
+.label {
+    color: royalblue;
+    font: 14px/22px Georgia, "Calisto MT", "Times New Roman", Times, serif;
+    text-align: left;
+    background-color: aliceblue;
+    float: left;
+    width: 150px;
+}
+
+.value {
+    color: black;
+    text-align: left;
+    font: 14px/22px Georgia, "Calisto MT", "Times New Roman", Times, serif;
+    background-color: aliceblue;
+}
+
+/* 
+Part 4
+Style Definition for displaying guestbook entries
+*/
+
+td.title {
+    background-color: royalblue;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+div.display_entries {
+    border-color: darkred;
+    border-width: 0px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    margin-top: 6px;
+    width: inherit;
+}
+
+div.evenentry {
+    border-color: deepskyblue;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    background-color: aliceblue;
+    margin-top: 6px;
+    margin-left: 6px;
+
+    width: 600px;
+}
+
+div.oddentry {
+    border-color: palevioletred;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    margin-top: 6px;
+    margin-left: 6px;
+    background-color: aliceblue;
+
+    width: 600px;
+}
+
+div.oddentry_top_row {
+    color: royalblue;
+    font: 14px/22px Georgia, "Calisto MT", "Times New Roman";
+    margin-top: 3px;
+    width: inherit;
+}
+
+div.evenentry_top_row {
+    color: royalblue;
+    font: 14px/22px Georgia, "Calisto MT", "Times New Roman";
+    margin-top: 3px;
+    width: inherit;
+}
+
+div.even {
+    margin-top: 3px;
+    width: inherit;
+}
+
+div.odd {
+    margin-top: 3px;
+    background-color: aliceblue;
+    width: inherit;
+}
+
+.topquestion {
+    font-family: Georgia, Helvetica, sans-serif;
+    color: royalblue;
+    font-size: 12px;
+    width: 150px;
+    text-align: left;
+    float: left;
+}
+
+.topresponse {
+    font-family: Georgia, Helvetica, sans-serif;
+    color: royalblue;
+    font-size: 12px;
+    width: 445px;
+    text-align: left;
+}
+
+.evenquestion {
+    font-family: Georgia, Helvetica, sans-serif;
+    color: gray;
+    font-size: 12px;
+    width: 150px;
+    float: left;
+    text-align: left;
+}
+
+.evenresponse {
+    font-family: Georgia, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 445px;
+    text-align: left;
+}
+
+.oddquestion {
+    font-family: Georgia, Helvetica, sans-serif;
+    color: gray;
+    font-size: 12px;
+    width: 150px;
+    float: left;
+    text-align: left;
+}
+
+.oddresponse {
+    font-family: Georgia, Helvetica, sans-serif;
+    color: black;
+    font-size: 12px;
+    width: 445px;
+    text-align: left;
+}
+
+a.link1, a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* 
+Part 5
+Style definition for form elements like input text boxes and buttons
+these style will be used on all forms e.g. add_entry, edit_entry, admin forms
+*/
+
+INPUT.btn {
+    position: static;
+    overflow: visible; 
+    width: 90px; 
+    font-size: 8pt;
+    font-family: Verdana, Helvetica, sans-serif; 
+    font-weight: bold;
+}
+
+INPUT.btnl {
+    border: 1px white outset; 
+    color: black; 
+    font-family: Arial; 
+    background-color: aliceblue; 
+    font-size: 90%; 
+    margin-top: 6px; 
+    font-weight: bold;
+}
+
+.text {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    background-color: whitesmoke;
+    border: 1px gray solid;
+}
+
+/*
+End of part 5 form elements
+*/
+
+td.tbl4 { 
+    text-align: left;
+}
+
+th.tbl4 { 
+    text-align: left;
+}
+
+div.message { 
+    color: red; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px; 
+    text-align: center;
+}
+
+.evenname {
+	font-family: Georgia, "Times New Roman", Times, serif; 
+    color: steelblue; 
+    font-size: 12px;
+}
+
+.oddname {
+	font-family: Georgia, "Times New Roman", Times, serif; 
+    color: lightblue; 
+    font-size: 12px;
+}
+
+.title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: darkblue;
+}
+
+.error {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: red;
+}
+
+/* 
+Style Definition for admin page
+*/
+
+/* 
+sub part 1
+Style definition for edit_entry form
+*/
+
+table.edit_entry {
+    background-color: lightblue;
+    width: 600px;
+    border: 1px;
+}
+
+/* 
+sub part 2
+	Style definition for list of all entries on admin page
+*/
+
+table.top_nav_admin {  
+    width: 100%;
+}
+
+.admin_list {  
+    width: 100%;
+    border-color: gray;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    margin-top: 6px;
+    background-color: lightblue;
+}
+
+tr.admin_list_top {
+    background-color: lightblue;
+    color: white;
+}
+
+tr.admin_list_data {
+    background-color: aliceblue;
+}
+
+/* 
+End of style definitions for admin pages
+*/
