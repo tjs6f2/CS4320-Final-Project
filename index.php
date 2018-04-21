@@ -3,7 +3,7 @@
 	require_once("conf.php");
 	require_once("gb.php");
 	require_once("db.class.php");
-    $ss="gb";
+        $ss="design";
 
 function display_navigation($start,$num_pages) {
 	
@@ -32,8 +32,9 @@ function display_navigation($start,$num_pages) {
 
 
 print <<<HTML_HEADER
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head>
+<!DOCTYPE HTML>
+<html>
+<head>
 
 <link rel="stylesheet" href="{$ss}.css" type="text/css">
 
@@ -90,15 +91,15 @@ HTML_HEADER;
 			$error .="Enter any comments <br>";
 		}
 		$entry->entry_dob=$_POST['entry_dob'];
-			$entry->entry_location=$_POST['entry_location'];
-			$entry->entry_author=$_POST['entry_name'];
-			$entry->entry_email=$_POST['entry_email'];
-			$entry->entry_url=$_POST['entry_website'];
-			$entry->entry_comments=$_POST['entry_comments'];
+			$entry->location=$_POST['entry_location'];
+			$entry->author=$_POST['entry_name'];
+			$entry->email=$_POST['entry_email'];
+			$entry->url=$_POST['entry_website'];
+			$entry->comments=$_POST['entry_comments'];
 			$entry->referer=$_POST['entry_referer'];
-			$entry->entry_ip=$_SERVER['REMOTE_ADDR'];
+			$entry->ip=$_SERVER['REMOTE_ADDR'];
 		if($ok) {
-			$entry->entry_id=$gb->next_id();
+			$entry->id=$gb->next_id();
 			$entry->add_entry();
 			$entry->update_total();
 			$action='list';
@@ -167,12 +168,8 @@ HTML_HEADER;
 print <<<FOOTER
 
 </body>
-</HTML>
+</html>
 FOOTER;
-
-
-
-
 
 
 ?>
