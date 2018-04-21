@@ -2,27 +2,11 @@ body {
     text-align: center;
 	width: 100%;
 }
-/* Part 1
-   1. style sheet definition for top navigation which includes GuestBook Heading
-   2. Navigation Link for adding entry and back to home page
-
-*/
-
-/* Important Note for changing the style defined here
- 	Width of following blocks should be same
-	div.main_gb
-	div.oddentry
-	div.evenentry
-	another imp note
-	div.topquestion.width + div.topquestionresponse.width= div.main_gb
-	div.oddquestion.width + div.oddquestionresponse.width= div.main_gb
-	div.evenquestion.width + div.evenquestionresponse.width= div.main_gb
-*/
 
 div.main_gb {
     margin: 0px;
     padding: 0px;
-	width: 600px;
+    width: 600px;
 }
 
 div.top_nav {
@@ -43,11 +27,6 @@ div.top_nav_link {
 .title_link {
 
 }
-
-/* Part 2
-	Style definition for
-	1.Page Navigation links to jump to different pages while viewing entries
-*/
 
 div.page_nav {
     text-align: left;
@@ -72,11 +51,6 @@ a.current {
     font-size: 20px;
     text-decoration: none;
 }
-
-/* 
-Part 3
-Style Definition for add_entry form
-*/
 
 .add_entry {
     background-color: aliceblue;
@@ -112,11 +86,6 @@ div.add_row {
     font: 14px/22px Georgia, "Calisto MT", "Times New Roman", Times, serif;
     background-color: aliceblue;
 }
-
-/* 
-Part 4
-Style Definition for displaying guestbook entries
-*/
 
 td.title {
     background-color: royalblue;
@@ -249,12 +218,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* 
-Part 5
-Style definition for form elements like input text boxes and buttons
-these style will be used on all forms e.g. add_entry, edit_entry, admin forms
-*/
-
 INPUT.btn {
     position: static;
     overflow: visible; 
@@ -281,10 +244,6 @@ INPUT.btnl {
     background-color: whitesmoke;
     border: 1px gray solid;
 }
-
-/*
-End of part 5 form elements
-*/
 
 td.tbl4 { 
     text-align: left;
@@ -325,25 +284,11 @@ div.message {
 	color: red;
 }
 
-/* 
-Style Definition for admin page
-*/
-
-/* 
-sub part 1
-Style definition for edit_entry form
-*/
-
 table.edit_entry {
     background-color: lightblue;
     width: 600px;
     border: 1px;
 }
-
-/* 
-sub part 2
-	Style definition for list of all entries on admin page
-*/
 
 table.top_nav_admin {  
     width: 100%;
@@ -369,7 +314,3 @@ tr.admin_list_top {
 tr.admin_list_data {
     background-color: aliceblue;
 }
-
-/* 
-End of style definitions for admin pages
-*/
