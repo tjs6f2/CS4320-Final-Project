@@ -1,7 +1,7 @@
 <?php
 
     require_once("conf.php");
-    require_once("gp.php");
+    require_once("guestBook.php");
     require_once("db.class.php");
   
     @session_start();
