@@ -1,7 +1,7 @@
 <?php
 //home page
 	require_once("conf.php");
-	require_once("gb.php");
+	require_once("guestBook.php");
 	require_once("db.class.php");
         $ss="design";
 
